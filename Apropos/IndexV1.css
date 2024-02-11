@@ -1,0 +1,467 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@400;700&display=swap');
+
+@font-face {
+  font-family: 'Rough_Splash';
+  src: url(asset/fonts/Rough_Splash_Font_Family_/Rough\ Splash\ 400.ttf);
+}
+
+@font-face {
+  font-family: 'Golden_Richlane';
+  src: url(asset/fonts/Golden_Richlane_Font_Family_/Golden\ Richlane\ 400.ttf);
+}
+
+@font-face {
+  font-family: 'Caveat';
+  src: url(asset/fonts/Caveat/Caveat-VariableFont_wght.ttf);
+}
+
+@font-face {
+  font-family: 'Permanent_Maker';
+  src: url(asset/fonts/Permanent_Marker/PermanentMarker-Regular.ttf);
+}
+
+:root{
+--color: #333; 
+--JauneDeNaples: #fff0bc;
+--Ivoire: #ffffd4;
+--Ecru: #fefee0;
+--Creamy_white: #fbffe9;
+--Clear_grey:  rgb(246, 246, 246);
+--Silver-grey: #a0a0a0;
+}
+
+
+body {
+  font-family: 'Red Hat Text', sans-serif;
+  margin: 0;
+}
+
+
+.container {
+  text-align: center;
+  color: var(--color);
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: url(asset/Images/background_Image-v2.png);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+#main_title{
+  font-family: 'Rough_Splash';
+  font-weight: 700;
+  font-size: 6rem;
+  color: var(--Creamy_white);
+  text-shadow: -4px 0 rgb(135, 101, 75), 0 4px rgb(135, 101, 75), 4px 0 rgb(135, 101, 75), 0 -4px rgb(135, 101, 75);
+}
+
+.button {
+  display: inline-block;
+  padding: 1em 3.5em;
+  background-color: var(--color);
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-radius: 0.3em;
+  font-weight: 700;
+  letter-spacing: .5px;
+  font-size: .875rem;
+}
+
+.button:hover{
+  /* a garder si on veut la même couleur mais un peu plus claire : */
+  /* background-color: #444444; */
+  background-color: #fefafa;
+  color: rgb(36, 186, 36);
+  border-radius: 0;
+  border: 2px solid rgb(36, 186, 36);
+}
+
+.separation{
+  height: 4vh;
+  background-color: var(--Ecru);
+}
+
+.CoverMain{
+  width: 100%;
+  min-height: 80vh;
+  align-items: center;
+  background-color: var(--Ecru);
+}
+
+.h3Title{
+  margin-top: 4vh;
+  margin-bottom: 4vw;
+  display: flex;
+  justify-content: center;
+  /* font-family: 'Golden_Richlane'; */
+  font-family: 'Red Hat Text';
+  /* font-size: 10rem;
+  font-weight: 200; */
+  font-size: 4rem;
+  font-weight: 600;
+  color: var(--color);
+}
+
+.h4Title{
+  margin-top: 4vh;
+  display: flex;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 2.8em;
+  color: #acacac;
+  /* font-family: 'Golden_Richlane'; */
+  font-family: 'Caveat';
+}
+
+.mainText{
+  margin-top: 4vh;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-weight: 400;
+  font-size: 1.4em;
+}
+
+.mainText2{
+  margin-top: 4vh;
+  display: flex;
+  justify-content: center;
+  text-align: justify;
+  font-weight: 400;
+  font-size: 1.4em;
+}
+
+.middle {
+  background-image:url(asset/Images/Background2-V2.jpg);
+  background-attachment: fixed;
+  height: 1000px;
+  /* flex-direction: row; */
+  gap: 1.6em;
+}
+
+.cards_list{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 1000px;
+  gap: 1.6em;
+}
+
+#h1_middle{
+  margin-top: 6vw;
+  margin-bottom: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  font-weight: 600;
+  font-size: 4rem;
+}
+
+/* .middle{
+  flex-direction: row;
+  gap: 1.6em;
+} */
+
+h3 {
+  font-weight: 700;
+  font-size: 1.6rem;
+  margin-top: 1em;
+}
+
+.card > a {
+  margin-bottom: 2em;
+}
+
+.item {
+  display: flex;
+  max-width: 328px;
+  max-height: 57%;
+  background-color: white;;
+  flex-direction: column;
+  align-items: center;
+  border-radius: .5em;
+  -webkit-box-shadow: 0px 29px 38px -15px rgba(0,0,0,0.43);
+  -moz-box-shadow: 0px 29px 38px -15px rgba(0,0,0,0.43);
+  box-shadow: 0px 29px 38px -15px rgba(0,0,0,0.43);
+}
+
+.img {
+  width: 10vw;
+  height: 10vw;
+  background-color: lightgrey;
+  background-size: cover;
+  background-position: center;
+  margin-top: 40px;
+  border-radius: .3em;
+}
+
+.img-first {
+  background-image: url(asset/Images/Logos/instagram-wood.jpg);
+}
+
+.img-second {
+  background-image: url(asset/Images/Logos/Tweeter_foliage-V2.jpg);
+}
+
+.img-third {
+  background-image: url(asset/Images/Logos/Facebook_marble.jpg);
+}
+
+.cardText{
+  padding: 8px;
+}
+
+footer{
+  width: 100%;
+  /* min-height: 60vh;
+  background-color: var(--color); */
+}
+
+#footer1{
+  height: 24vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color);
+}
+
+#footer2{
+  height: 10vh;
+  background-color: #161616;
+}
+
+.Coordonnees{
+  padding: 8vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.navigation{
+  padding-left: 8vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer1Title{
+  color: white;
+}
+
+.footer1Text{
+  color: var(--Clear_grey);
+}
+
+.footer1Link{
+  color: var(--Clear_grey);
+  text-decoration: none;
+}
+
+.footer1Link:hover{
+  text-decoration: underline;
+}
+
+
+.footer2LinkList{
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.footer2LinkText{
+  margin-top: 4vh;
+  color: white;
+}
+
+.footer2Link{
+  margin-top: 2vw;
+  padding: 2vh;
+  color: #faeec1;
+  text-decoration: none;
+}
+.footer2Link:hover{
+  text-decoration: underline;
+}
+
+
+
+
+@media (orientation: portrait) {
+
+  body{
+    margin: 0;
+    background-color: #fbfff1;
+  }
+
+  #main_title{
+    font-family: 'Rough_Splash';
+    font-weight: 700;
+    font-size: 4rem;
+    color: var(--Creamy_white);
+    text-shadow: -4px 0 rgb(135, 101, 75), 0 4px rgb(135, 101, 75), 4px 0 rgb(135, 101, 75), 0 -4px rgb(135, 101, 75);
+  }
+  .separation{
+    height: 1px;
+  }
+
+  .h3Title{
+    margin-top: 8vh;
+    margin-bottom: 4vw;
+    display: flex;
+    justify-content: center;
+    /* font-family: 'Golden_Richlane'; */
+    /* font-family: 'Red Hat Text'; */
+    font-size: 2.4rem;
+    font-weight: 700;
+    color: var(--color);
+  }
+  
+  .h4Title{
+    margin-top: 4vh;
+    margin-bottom: 2vh;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-weight: 800;
+    font-size: 1.8em;
+    color: #acacac;
+  }
+
+  .mainText{
+    margin-top: 4vh;
+    padding: 4vh;
+    padding-top: 0;
+    display: flex;
+    justify-content: center;
+    text-align: justify;
+    font-weight: 400;
+    font-size: 1em;
+  }
+
+  .mainText2{
+    margin-top: 0;
+    padding-left: 4vh;
+    padding-right: 4vh;
+    display: flex;
+    justify-content: center;
+    text-align: justify;
+    font-weight: 400;
+    font-size: 1em;
+  }
+
+  .middle{
+    background-image:url(asset/Images/Background2-V2.jpg);
+    background-attachment: fixed;
+    height: 1200px;
+    gap: 1.6em;
+  }
+
+  #h1_middle{
+    margin-top: 16vw;
+    margin-bottom: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    font-weight: 600;
+    font-size: 2rem;
+  }
+  
+  h3 {
+    font-weight: 700;
+    font-size: 1.4rem;
+    margin-top: 1em;
+  }
+  
+  .cards_list{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .card > a {
+    margin-bottom: 2em;
+  }
+  
+  .item {
+    padding: 8px;
+    display: flex;
+    max-width: 240px;
+    max-height: 32%;
+    background-color: white;;
+    flex-direction: column;
+    align-items: center;
+    border-radius: .5em;
+    -webkit-box-shadow: 0px 29px 38px -15px rgba(0,0,0,0.43);
+    -moz-box-shadow: 0px 29px 38px -15px rgba(0,0,0,0.43);
+    box-shadow: 0px 29px 38px -15px rgba(0,0,0,0.43);
+  }
+  
+  .img {
+    width: 16vw;
+    height: 16vw;
+    background-color: lightgrey;
+    background-size: cover;
+    background-position: center;
+    margin-top: 40px;
+    border-radius: .3em;
+  }
+
+    .cardText{
+    padding: 8px;
+  }
+  
+  .img-first {
+    background-image: url(asset/Images/Logos/Insta_Logo_sansContours.svg);
+  }
+  
+  .img-second {
+    background-image: url(asset/Images/Logos/Tweeter_Logo_sansContours.svg);
+  }
+  
+  .img-third {
+    background-image: url(asset/Images/Logos/Facebook_Logo_sansContours.svg);
+  }
+  
+  .button {
+    display: inline-block;
+    padding: 1em 3.5em;
+    background-color: var(--color);
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 0.3em;
+    font-weight: 700;
+    letter-spacing: .5px;
+    font-size: .875rem;
+  }
+
+  footer{
+    margin-top: 8rem;
+  }
+
+  .footer2LinkText{
+    margin-top: 4vh;
+    font-size: 12px;
+    color: white;
+  }
+  
+  .footer2Link{
+    margin-top: 2vw;
+    padding: 2vh;
+    color: #faeec1;
+    text-decoration: none;
+  }
+  .footer2Link:hover{
+    text-decoration: underline;
+  }
+
+}

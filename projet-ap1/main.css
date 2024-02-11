@@ -1,0 +1,309 @@
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .body {
+            /* background: linear-gradient(to bottom, #CEA8FF, #9eb6eb); */
+            background-size: cover;
+            background-color: #FAC976;
+            transition: background-color 1.5s ease;
+            height: 100vh;
+            overflow-y: hidden;
+            background-repeat: no-repeat;
+        }
+
+        nav {
+            display: flex;
+            height: 10vh;
+            align-items: center;
+            margin: 0 5%;
+            justify-content: center;
+        }
+
+        .logo {
+            width: 3.5%;
+            margin: 0.5% 0.5% 0 0;
+        }
+
+        .main {
+            margin: 0 auto 0 1%;
+        }
+
+        .main{
+            font-weight: 700;
+            font-size: 1.6rem;
+            position: relative;
+            color: #000;
+            text-decoration: none;
+        }
+
+        .main::before {
+            content: "";
+            position: absolute;
+            display: block;
+            width: 100%;
+            height: 3px;
+            bottom: 0;
+            left: 0;
+            background-color: rgb(81, 81, 162);;
+            transform: scaleX(0);
+            transition: transform 0.6s ease;
+        }
+
+        .main:hover::before {
+            text-underline-offset: 6px;
+            transform: scaleX(1);
+        }
+
+        .main:hover{
+            color: white;
+        }
+
+
+
+        .right-nav {
+            display: flex;
+            gap: 1.5em;
+        }
+
+        .right-nav a,
+        a {
+            font-weight: 700;
+            font-size: 1.6rem;
+            position: relative;
+            color: #000;
+            text-decoration: none;
+        }
+
+        a::before {
+            content: "";
+            position: absolute;
+            display: block;
+            width: 100%;
+            height: 3px;
+            bottom: 0;
+            left: 0;
+            background-color: rgb(81, 81, 162);
+            transform: scaleX(0);
+            transition: transform 0.6s ease;
+        }
+
+        .right-nav a:hover::before {
+            text-underline-offset: 6px;
+            transform: scaleX(1);
+        }
+
+        .right-nav a:hover{
+            color: white;
+        }
+
+
+        .background-text p {
+            font-size: 8vw;
+            /* Responsive font size */
+            font-weight: 800;
+            color: #AC6AFF;
+            text-align: center;
+            line-height: 1;
+            z-index: -1;
+            margin-left: 1.8em;
+            position: relative;
+        }
+
+        .background-text {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            height: 85vh;
+            position: absolute;
+        }
+
+  
+        .arrow-left,
+        .arrow-right {
+            position: absolute;
+            top: 33%;
+            font-size: 15vw;
+            /* Responsive font size */
+            color: #2e2b2b;
+            z-index: 2;
+            cursor: pointer;
+        }
+
+        .arrow-left {
+            left: 20%;
+            /* Ajusté pour éviter le déplacement vers le haut */
+            top: 50%;
+            /* Centre vertical */
+            transform: translateY(-50%);
+            /* Centre vertical */
+
+
+        }
+
+        .arrow-right {
+            right: 20%;
+            /* Ajusté pour éviter le déplacement vers le haut */
+            top: 50%;
+            /* Centre vertical */
+            transform: translateY(-50%);
+            /* Centre vertical */
+
+
+        }
+
+        .bottom-duo-button {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 10vh;
+            width: 100%;
+            position: absolute;
+            bottom: 6%;
+            gap: 3%;
+            z-index: 2;
+        }
+
+        .dim-bottom-button {
+            cursor: pointer;
+            padding: 1.3em 3em;
+            border: none;
+            background-color: white;
+            font-weight: 800;
+            border-radius: 15px;
+            color: black;
+        }
+
+        #bottom-right-button {
+            background-color: black;
+            color: white;
+        }
+
+        #bottom-right-button:hover {
+            background-color: white;
+            transition: all 0.6s ease;
+            box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+            color: black;
+        }
+
+        #bottom-left-button:hover {
+            transition: all 0.6s ease;
+            background-color: white;
+            box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+            color: black;
+
+        }
+
+        #bottom-left-button {
+            background-color: rgb(3, 19, 63);
+            color: white;
+
+        }
+
+        span {
+            margin-right: 1.5em;
+        }
+
+        
+
+
+
+
+
+
+
+/*       
+Pour la canette */
+
+        .canettemenu{
+            justify-content: space-between;
+            align-items: center;
+            display: flex;
+            height: 80vh;
+            width:100vw;
+        }
+        .can{
+            
+            
+            transform: scale(0.25);
+            margin-bottom: 5%;
+            
+            z-index: 0;
+
+            width: 850px; /* Set the desired width */
+            height: 1672px; /* Set the desired height */
+            background-image: url('/projet-ap1/CanTextures/Canette_patern.png'); /*Replace with the path to your background image*/
+            -webkit-mask-image: url('/projet-ap1/CanTextures/canmask_.png'); /* Replace with the path to your mask image */
+            mask-image: url('/projet-ap1/CanTextures/canmask_.png'); /* Standard property for mask image */
+            background-size: cover; /* Adjust based on your needs */
+            background-repeat:repeat-x;
+            
+            transition :background-position 0.5s ease-in-out;
+        
+          }
+
+          
+        
+         .shadow {
+            width: 850px;
+            height: 1672px;
+            background-image: url(/projet-ap1/CanTextures/canshad_.png);
+        }
+        .increment{
+            z-index: 1;
+            margin-right: 15vw;
+            width: 15vw;
+            height: 20vh;
+            background-image: url("/projet-ap1/img/increm.png");
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        .decrement{
+            z-index: 1;
+            margin-left: 15vw;
+            width: 15vw;
+            height: 20vh;
+            background-image: url("/projet-ap1/img/decrem.png");
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+
+        }
+
+        .vertical-bar::after {
+            content: '';
+            width: 0.7%;
+            height: 28%;
+            background: linear-gradient(#b68bed, #6290f2);
+            position: absolute;
+            left: 10%;
+            top: 40%;
+            filter: saturate(3.5);
+            rotate: 180deg;
+        }
+
+        .icons {
+            position: absolute;
+            left: 4%;
+            bottom: 33%;
+            background: transparent;
+        }
+
+        .icons i {
+            display: flex;
+            margin: 0.5em 0;
+            font-size: 1.7em;
+            color: black;
+            transition: all .35s ease;
+        }
+
+        .icons i:hover {
+            transform: translateX(30%);
+            color: #a471e7;
+            filter: saturate(1.5);
+        }

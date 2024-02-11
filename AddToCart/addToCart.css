@@ -1,0 +1,327 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+@font-face {
+    font-family: 'Anton';
+    src: url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+}
+
+@font-face {
+    font-family: 'Kanit';
+    src: url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400;1,500&display=swap');
+}
+
+@font-face {
+    font-family: 'Red Hat Text';
+    src: url('https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@400;700&display=swap');
+}
+
+
+:root{
+    --color: #333;
+    --Clear_grey:  rgb(246, 246, 246);
+    --Silver-grey: #a0a0a0;
+}
+
+/*
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+Menthe-Citron
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+*/
+
+body{
+    margin: 0;
+}
+
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+#BigCan{
+    width: 98%;
+}
+
+.split{
+    margin-bottom: 4%;
+    padding: 4vh;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#image_MC{
+    background-color: rgb(178, 255, 178);
+}
+
+h2{
+    letter-spacing: 1px;
+    font-family: 'Anton';
+    font-weight: 400;
+}
+
+p{
+    margin-bottom: 4%;
+    font-family: 'Open Sans';
+    font-weight: 400;
+}
+
+.canImg{
+    margin-top: 4%;
+}
+
+.imgLink{
+    margin: 4vh;
+}
+
+.littleCan{
+    width: 8%;
+    padding: 4px;
+}
+
+.littleCan:hover{
+    width: 7.5%;
+    border: 2px solid rgb(216, 216, 216);
+    border-radius: 4px;
+}
+
+#MC_can{
+    width: 7.5%;
+    border: 2px solid rgb(136, 251, 136);
+    border-radius: 4px;
+}
+
+#Mirtille_can{
+    width: 7.5%;
+    border: 2px solid rgb(236, 136, 251);
+    border-radius: 4px;
+}
+
+#Mangue_can{
+    width: 7.5%;
+    border: 2px solid rgb(251, 157, 136);
+    border-radius: 4px;
+}
+
+.add{
+    margin-top: 4rem;
+    padding: 2%;
+    width: 18%;
+    text-decoration: none;
+    letter-spacing: 1px;
+    border: 2px solid rgb(136, 251, 136);
+    font-family: 'Kanit';
+    font-weight: 800;
+    color: rgb(136, 251, 136);
+}
+
+.add:hover{
+    background-color: rgb(136, 251, 136);
+
+    border-radius: 4px;
+    color: white;
+}
+
+
+/*
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+Mirtille
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+*/
+
+#image_M{
+    background-color: rgb(254, 178, 255);
+}
+
+.littleCan_mirtille{
+    width: 8%;
+    padding: 4px;
+}
+
+.littleCan_mirtille:hover{
+    width: 7.5%;
+    border: 2px solid rgb(216, 216, 216);
+    border-radius: 4px;
+}
+
+.add_mirtille{
+    margin-top: 4rem;
+    padding: 2%;
+    width: 18%;
+    text-decoration: none;
+    letter-spacing: 1px;
+    border: 2px solid rgb(228, 136, 251);
+    font-family: 'Kanit';
+    font-weight: 800;
+    color: rgb(228, 136, 251);
+}
+
+.add_mirtille:hover{
+    background-color: rgb(228, 136, 251);
+    border-radius: 4px;
+    color: white;
+}
+
+
+/*
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+Mangue
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+*/
+
+#image_Mangue{
+    background-color: rgb(255, 196, 178);
+}
+
+.littleCan_mangue{
+    width: 8%;
+    padding: 4px;
+}
+
+.littleCan_mangue:hover{
+    width: 7.5%;
+    border: 2px solid rgb(216, 216, 216);
+    border-radius: 4px;
+}
+
+.add_mangue{
+    margin-top: 4rem;
+    padding: 2%;
+    width: 18%;
+    text-decoration: none;
+    letter-spacing: 1px;
+    border: 2px solid rgb(251, 188, 136);
+    font-family: 'Kanit';
+    font-weight: 800;
+    color: rgb(251, 188, 136);
+}
+
+.add_mangue:hover{
+    background-color: rgb(251, 188, 136);
+    border-radius: 4px;
+    color: white;
+}
+
+
+
+footer{
+    width: 100%;
+    /* min-height: 60vh;
+    background-color: var(--color); */
+  }
+  
+  #footer1{
+    height: 24vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #footer2{
+    height: 10vh;
+    background-color: #161616;
+  }
+  
+  
+  .footerLinkList{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+  }
+  
+  .footerSocialLink{
+    margin-top: 2vw;
+    padding-left: 2vw;
+    color: white;
+    text-decoration: none;
+  }
+  .footerSocialLink:hover{
+    text-decoration: underline;
+    color: #faeec1;
+  }
+  
+  .Coordonnees{
+    padding: 8vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  
+  .navigation{
+    padding-left: 8vh;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .footer1Title{
+    color: rgb(0, 0, 0);
+  }
+  
+  .footer1Text{
+    color: var(--color);
+  }
+  
+  .footer1Link{
+    color: var(--color);
+    text-decoration: none;
+  }
+  
+  .footer1Link:hover{
+    text-decoration: underline;
+  }
+  
+  
+  .footer2LinkList{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+  }
+  
+  .footer2LinkText{
+    margin-top: 4vh;
+    color: white;
+  }
+  
+  .footer2Link{
+    margin-top: 2vw;
+    padding: 2vh;
+    color: #faeec1;
+    text-decoration: none;
+  }
+  .footer2Link:hover{
+    text-decoration: underline;
+  }
+  
+
+
+
+/*
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+MEDIA QUERYS
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+*/
+
+@media (orientation:portrait) {
+    .main{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+}
